@@ -1,0 +1,14 @@
+version: 2
+
+sources:
+    - name: clockify_source_data
+      description: This is a replica of the Postgres database used by our app
+      database: integration_t20
+      schema: clockify_automation
+      tables:
+          - name: employee
+            description: One record per employee.
+          - name: project
+            description: One record per order. Includes cancelled and deleted orders.
+          - name: timesheet_entry
+            description: One record per order. Includes cancelled and deleted orders.

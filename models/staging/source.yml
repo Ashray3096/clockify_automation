@@ -6,9 +6,9 @@ sources:
       database: integration_t20
       schema: clockify_automation
       tables:
-          - name: employee
+          - name: employee_info
             description: One record per employee.
-          - name: project
+          - name: project_details
             description: One record per order. Includes cancelled and deleted orders.
           - name: timesheet_entry
             description: One record per order. Includes cancelled and deleted orders.

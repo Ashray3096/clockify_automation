@@ -4,4 +4,10 @@
   )
 }}
 
-select employee_id, name, email, status, timezone from {{ source('clockify_source_data', 'employee') }}
+select 
+    employee_id, 
+    name, 
+    email, 
+    status, 
+    timezone 
+from {{ source('clockify_source_data', 'employee_info') }}

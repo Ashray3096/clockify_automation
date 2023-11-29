@@ -1,3 +1,9 @@
+{{
+  config(
+    materialized='table'
+  )
+}}
+
 WITH latest_friday_timesheets AS (
     SELECT DISTINCT T.Employee_ID
     FROM (

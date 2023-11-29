@@ -9,6 +9,8 @@ select
     employee_id, 
     taskid,    
     project_id, 
+    description,
+    billable,
     start_date, 
     end_date, 
     duration

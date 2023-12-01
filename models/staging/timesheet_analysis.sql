@@ -19,4 +19,4 @@ SELECT DISTINCT E.name
 FROM {{ ref('employee') }} E
 WHERE E.employee_id NOT IN (
     SELECT * FROM latest_friday_timesheets
-)
+) AND E.status = 'ACTIVE'
